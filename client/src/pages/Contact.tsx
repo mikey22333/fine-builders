@@ -1,17 +1,25 @@
+import { motion } from "framer-motion";
+import ScrollReveal, { StaggerContainer, StaggerItem } from "@/components/ScrollReveal";
 import ContactForm from "@/components/ContactForm";
 
 export default function Contact() {
   return (
-    <div className="pt-28 pb-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="pt-28 pb-20 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
+      <div className="absolute inset-0 floating-elements pointer-events-none" />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Contact Us</h1>
-          <div className="w-24 h-1 bg-orange-600 mx-auto mb-8"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to transform your space? Get in touch with us today and let's discuss your dream project.
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-20">
+            <motion.h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-gray-900 mb-8 leading-tight">
+              Get In Touch
+            </motion.h1>
+            <motion.div className="w-32 h-1.5 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto mb-12 rounded-full" />
+            <motion.p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
+              Ready to transform your space? Let's discuss your vision and create something extraordinary together.
+            </motion.p>
+          </div>
+        </ScrollReveal>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}

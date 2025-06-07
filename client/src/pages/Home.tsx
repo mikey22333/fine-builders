@@ -34,7 +34,7 @@ export default function Home() {
       <Hero />
 
       {/* Our Promise Section */}
-      <section className="section-padding bg-gradient-to-br from-white via-gray-50/50 to-white relative">
+      <section id="our-promise" className="section-padding bg-gradient-to-br from-white via-gray-50/50 to-white relative">
         <div className="absolute inset-0 floating-elements pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <ScrollReveal>

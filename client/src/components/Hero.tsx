@@ -164,18 +164,30 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 2, duration: 0.8 }}
       >
-        <motion.div
-          className="flex flex-col items-center cursor-pointer"
+        <motion.button
+          className="flex flex-col items-center cursor-pointer group focus:outline-none"
           animate={{ y: [0, -10, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={() => {
+            const nextSection = document.querySelector('#our-promise');
+            if (nextSection) {
+              nextSection.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
         >
-          <span className="text-sm mb-2 opacity-75 font-light">Scroll Down</span>
-          <motion.i
-            className="fas fa-chevron-down"
+          <span className="text-sm mb-2 opacity-75 font-light group-hover:opacity-100 transition-opacity">
+            Scroll Down
+          </span>
+          <motion.div
+            className="w-10 h-10 rounded-full border-2 border-white/50 flex items-center justify-center group-hover:border-white group-hover:bg-white/10 transition-all duration-300"
             animate={{ y: [0, 5, 0] }}
             transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-          />
-        </motion.div>
+          >
+            <i className="fas fa-chevron-down text-sm" />
+          </motion.div>
+        </motion.button>
       </motion.div>
     </section>
   );
