@@ -11,7 +11,7 @@ export default function Portfolio() {
       category: "kitchens",
       title: "Modern Modular Kitchen",
       location: "Ambalappuzha, Kerala",
-      image: "/attached_assets/WhatsApp Image 2025-06-07 at 20.33.21_d88b7c74_1749311740966.jpg",
+      image: "/images/kitchen1.jpg",
       alt: "Contemporary modular kitchen with island and pendant lighting"
     },
     {
@@ -19,7 +19,7 @@ export default function Portfolio() {
       category: "kitchens",
       title: "Premium Kitchen Design",
       location: "Kerala",
-      image: "/attached_assets/WhatsApp Image 2025-06-07 at 20.33.19_4a8af288_1749311740967.jpg",
+      image: "/images/kitchen2.jpg",
       alt: "Modern kitchen with bar seating and premium finishes"
     },
     {
@@ -27,7 +27,7 @@ export default function Portfolio() {
       category: "residential",
       title: "Master Bedroom Interior",
       location: "Kerala",
-      image: "/attached_assets/WhatsApp Image 2025-06-07 at 20.33.20_aa9f3400_1749311740966.jpg",
+      image: "/images/bedroom.jpg",
       alt: "Contemporary master bedroom with accent lighting"
     },
     {
@@ -35,7 +35,7 @@ export default function Portfolio() {
       category: "residential",
       title: "Custom Wardrobe Design",
       location: "Kerala",
-      image: "/attached_assets/WhatsApp Image 2025-06-07 at 20.33.19_422978ee_1749311740967.jpg",
+      image: "/images/wardrobe.jpg",
       alt: "Modern wardrobe with integrated mirror and storage"
     },
     {
@@ -43,7 +43,7 @@ export default function Portfolio() {
       category: "residential",
       title: "Living Room Mirror Feature",
       location: "Kerala",
-      image: "/attached_assets/WhatsApp Image 2025-06-07 at 20.33.22_160a8173_1749311740965.jpg",
+      image: "/images/living-room.jpg",
       alt: "Elegant living room with decorative mirror and plants"
     },
     {
@@ -51,7 +51,7 @@ export default function Portfolio() {
       category: "residential",
       title: "Home Office Design",
       location: "Kerala",
-      image: "/attached_assets/WhatsApp Image 2025-06-07 at 20.33.20_0efcec1b_1749311740967.jpg",
+      image: "/images/office.jpg",
       alt: "Modern home office with ergonomic furniture"
     },
     {
@@ -59,7 +59,7 @@ export default function Portfolio() {
       category: "residential",
       title: "Custom Storage Solutions",
       location: "Kerala",
-      image: "/attached_assets/WhatsApp Image 2025-06-07 at 20.33.20_8d7d53d7_1749311740966.jpg",
+      image: "/images/storage.jpg",
       alt: "Innovative wooden partition and storage design"
     },
     {
@@ -67,7 +67,7 @@ export default function Portfolio() {
       category: "commercial",
       title: "Showroom Display Design",
       location: "Kerala",
-      image: "/attached_assets/WhatsApp Image 2025-06-07 at 20.33.22_bc39937e_1749311740967.jpg",
+      image: "/images/showroom.jpg",
       alt: "Modern furniture showroom with contemporary displays"
     },
     {
@@ -75,7 +75,7 @@ export default function Portfolio() {
       category: "residential",
       title: "Ceiling Design with Mirror",
       location: "Kerala",
-      image: "/attached_assets/WhatsApp Image 2025-06-07 at 20.33.21_ac096849_1749311740968.jpg",
+      image: "/images/ceiling.jpg",
       alt: "Innovative ceiling design with geometric mirror feature"
     }
   ];

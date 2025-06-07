@@ -83,7 +83,7 @@ export default function Home() {
               {/* Featured project - Modern modular kitchen */}
               <div className="mb-6 rounded-lg overflow-hidden">
                 <img
-                  src="/attached_assets/WhatsApp Image 2025-06-07 at 20.33.21_d88b7c74_1749311740966.jpg"
+                  src="/images/kitchen1.jpg"
                   alt="Modern modular kitchen with island and premium finishes"
                   className="w-full h-40 object-cover"
                 />

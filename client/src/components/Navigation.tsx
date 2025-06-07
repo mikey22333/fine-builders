@@ -36,7 +36,7 @@ export default function Navigation() {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center space-x-3">
               <img
-                src="/attached_assets/logo_1749311740968.png"
+                src="/images/logo.png"
                 alt="Fine Builders & Interiors Logo"
                 className="h-8 lg:h-10 w-auto"
               />
