@@ -8,75 +8,75 @@ export default function Portfolio() {
   const portfolioItems = [
     {
       id: 1,
-      category: "residential",
-      title: "Luxury Living Room",
-      location: "Kochi, Kerala",
-      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Modern luxury living room interior design"
+      category: "kitchens",
+      title: "Modern Modular Kitchen",
+      location: "Ambalappuzha, Kerala",
+      image: "/attached_assets/WhatsApp Image 2025-06-07 at 20.33.21_d88b7c74_1749311740966.jpg",
+      alt: "Contemporary modular kitchen with island and pendant lighting"
     },
     {
       id: 2,
-      category: "commercial",
-      title: "Corporate Office Design",
-      location: "Thiruvananthapuram, Kerala",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Modern commercial office interior design"
+      category: "kitchens",
+      title: "Premium Kitchen Design",
+      location: "Kerala",
+      image: "/attached_assets/WhatsApp Image 2025-06-07 at 20.33.19_4a8af288_1749311740967.jpg",
+      alt: "Modern kitchen with bar seating and premium finishes"
     },
     {
       id: 3,
-      category: "kitchens",
-      title: "Modular Kitchen Design",
-      location: "Alappuzha, Kerala",
-      image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Modern modular kitchen design"
+      category: "residential",
+      title: "Master Bedroom Interior",
+      location: "Kerala",
+      image: "/attached_assets/WhatsApp Image 2025-06-07 at 20.33.20_aa9f3400_1749311740966.jpg",
+      alt: "Contemporary master bedroom with accent lighting"
     },
     {
       id: 4,
       category: "residential",
-      title: "Master Bedroom Suite",
-      location: "Kollam, Kerala",
-      image: "https://images.unsplash.com/photo-1540932239986-30128078f3c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Contemporary master bedroom"
+      title: "Custom Wardrobe Design",
+      location: "Kerala",
+      image: "/attached_assets/WhatsApp Image 2025-06-07 at 20.33.19_422978ee_1749311740967.jpg",
+      alt: "Modern wardrobe with integrated mirror and storage"
     },
     {
       id: 5,
-      category: "commercial",
-      title: "Restaurant Interior",
-      location: "Kottayam, Kerala",
-      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Restaurant interior design"
+      category: "residential",
+      title: "Living Room Mirror Feature",
+      location: "Kerala",
+      image: "/attached_assets/WhatsApp Image 2025-06-07 at 20.33.22_160a8173_1749311740965.jpg",
+      alt: "Elegant living room with decorative mirror and plants"
     },
     {
       id: 6,
-      category: "kitchens",
-      title: "Kitchen Island Design",
-      location: "Palakkad, Kerala",
-      image: "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Kitchen island design"
+      category: "residential",
+      title: "Home Office Design",
+      location: "Kerala",
+      image: "/attached_assets/WhatsApp Image 2025-06-07 at 20.33.20_0efcec1b_1749311740967.jpg",
+      alt: "Modern home office with ergonomic furniture"
     },
     {
       id: 7,
       category: "residential",
-      title: "Luxury Bathroom",
-      location: "Ernakulam, Kerala",
-      image: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Luxury bathroom design"
+      title: "Custom Storage Solutions",
+      location: "Kerala",
+      image: "/attached_assets/WhatsApp Image 2025-06-07 at 20.33.20_8d7d53d7_1749311740966.jpg",
+      alt: "Innovative wooden partition and storage design"
     },
     {
       id: 8,
       category: "commercial",
-      title: "Boutique Store Design",
-      location: "Thrissur, Kerala",
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Retail store design"
+      title: "Showroom Display Design",
+      location: "Kerala",
+      image: "/attached_assets/WhatsApp Image 2025-06-07 at 20.33.22_bc39937e_1749311740967.jpg",
+      alt: "Modern furniture showroom with contemporary displays"
     },
     {
       id: 9,
       category: "residential",
-      title: "Home Study & Library",
-      location: "Kozhikode, Kerala",
-      image: "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Home study design"
+      title: "Ceiling Design with Mirror",
+      location: "Kerala",
+      image: "/attached_assets/WhatsApp Image 2025-06-07 at 20.33.21_ac096849_1749311740968.jpg",
+      alt: "Innovative ceiling design with geometric mirror feature"
     }
   ];
 

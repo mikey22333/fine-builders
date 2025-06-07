@@ -34,8 +34,13 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/">
-              <h1 className="text-xl lg:text-2xl font-bold brand-brown cursor-pointer">
+            <Link href="/" className="flex items-center space-x-3">
+              <img
+                src="/attached_assets/logo_1749311740968.png"
+                alt="Fine Builders & Interiors Logo"
+                className="h-8 lg:h-10 w-auto"
+              />
+              <h1 className="text-lg lg:text-xl font-bold brand-brown cursor-pointer hidden sm:block">
                 Fine Builders & Interiors
               </h1>
             </Link>

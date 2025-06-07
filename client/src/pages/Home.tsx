@@ -80,11 +80,11 @@ export default function Home() {
             <div className="card-hover bg-white p-8 rounded-xl shadow-lg">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Featured Work</h3>
               <p className="text-gray-600 mb-6">Discover our portfolio of stunning transformations that showcase our commitment to excellence and innovation.</p>
-              {/* Elegant bedroom with modern furniture and warm lighting */}
+              {/* Featured project - Modern modular kitchen */}
               <div className="mb-6 rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300"
-                  alt="Elegant bedroom interior with modern furniture"
+                  src="/attached_assets/WhatsApp Image 2025-06-07 at 20.33.21_d88b7c74_1749311740966.jpg"
+                  alt="Modern modular kitchen with island and premium finishes"
                   className="w-full h-40 object-cover"
                 />
               </div>
