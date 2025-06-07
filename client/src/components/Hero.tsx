@@ -84,8 +84,8 @@ export default function Hero() {
         ))}
         
         {/* Sophisticated overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/70" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent" />
       </div>
 
       {/* Floating geometric elements */}
@@ -108,7 +108,7 @@ export default function Hero() {
       </div>
       
       <motion.div
-        className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+        className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -118,15 +118,15 @@ export default function Hero() {
           className="mb-8"
           variants={slideUpVariants}
         >
-          <motion.h1 
-            className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-light text-white mb-6 tracking-tight"
+          <motion.h1
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light text-white mb-6 tracking-tight leading-tight"
             key={currentSlide}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            <span className="block font-thin">Fine</span>
-            <span className="block font-bold bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
+            <span className="block font-thin text-white drop-shadow-lg">Fine</span>
+            <span className="block font-bold bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent drop-shadow-lg">
               Builders
             </span>
           </motion.h1>
@@ -143,8 +143,8 @@ export default function Hero() {
           variants={slideUpVariants}
           className="mb-12"
         >
-          <motion.h2 
-            className="text-2xl md:text-3xl lg:text-4xl font-light text-white/90 mb-4 tracking-wide"
+          <motion.h2
+            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-white/95 mb-4 tracking-wide drop-shadow-md"
             key={`subtitle-${currentSlide}`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -154,7 +154,7 @@ export default function Hero() {
           </motion.h2>
           
           <motion.p
-            className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto font-light leading-relaxed"
+            className="text-base sm:text-lg md:text-xl text-white/80 max-w-3xl mx-auto font-light leading-relaxed drop-shadow-sm"
             variants={slideUpVariants}
           >
             Award-winning interior design studio in Kerala, crafting bespoke spaces that reflect your unique vision and lifestyle through innovative design excellence.
@@ -163,7 +163,7 @@ export default function Hero() {
 
         <motion.div
           variants={slideUpVariants}
-          className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
+          className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-12 sm:mb-16 px-4"
         >
           <motion.div
             variants={fadeInVariants}
@@ -172,12 +172,12 @@ export default function Hero() {
           >
             <Link
               href="/portfolio"
-              className="group relative px-12 py-6 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-medium rounded-none overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/25"
+              className="group relative inline-flex items-center justify-center px-8 sm:px-12 py-4 sm:py-5 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold text-sm sm:text-base tracking-wide uppercase overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/25 min-w-[200px] sm:min-w-[240px] w-full sm:w-auto"
             >
               <span className="relative z-10 flex items-center">
                 Explore Portfolio
-                <motion.i 
-                  className="fas fa-arrow-right ml-3"
+                <motion.i
+                  className="fas fa-arrow-right ml-3 text-sm"
                   animate={{ x: [0, 5, 0] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 />
@@ -193,10 +193,10 @@ export default function Hero() {
           >
             <a
               href="tel:+919895516163"
-              className="group px-12 py-6 border-2 border-white/30 text-white font-medium rounded-none backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-500 hover:shadow-2xl"
+              className="group inline-flex items-center justify-center px-8 sm:px-12 py-4 sm:py-5 border-2 border-white/40 text-white font-semibold text-sm sm:text-base tracking-wide uppercase backdrop-blur-sm hover:bg-white hover:text-gray-900 hover:border-white transition-all duration-500 hover:shadow-2xl min-w-[200px] sm:min-w-[240px] w-full sm:w-auto"
             >
               <span className="flex items-center">
-                <i className="fas fa-phone mr-3"></i>
+                <i className="fas fa-phone mr-3 text-sm"></i>
                 Schedule Consultation
               </span>
             </a>
@@ -231,40 +231,7 @@ export default function Hero() {
         </motion.div>
       </motion.div>
 
-      {/* Elegant scroll indicator */}
-      <motion.div
-        className="absolute bottom-12 left-1/2 transform -translate-x-1/2"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 2.5, duration: 1 }}
-      >
-        <motion.button
-          className="group flex flex-col items-center cursor-pointer focus:outline-none"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={() => {
-            const nextSection = document.querySelector('#our-promise');
-            if (nextSection) {
-              nextSection.scrollIntoView({ behavior: 'smooth' });
-            }
-          }}
-        >
-          <span className="text-white/60 text-sm font-light mb-4 group-hover:text-white/90 transition-colors duration-300">
-            Discover More
-          </span>
-          <motion.div
-            className="w-px h-16 bg-gradient-to-b from-white/40 to-transparent relative"
-            animate={{ scaleY: [1, 1.2, 1] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <motion.div
-              className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-white rounded-full"
-              animate={{ y: [0, -20, 0], opacity: [1, 0.3, 1] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            />
-          </motion.div>
-        </motion.button>
-      </motion.div>
+
     </section>
   );
 }

@@ -63,6 +63,20 @@
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
   }
+
+  /* Prevent text overflow and improve rendering */
+  h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* Improve text rendering */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
   
   html {
     scroll-behavior: smooth;

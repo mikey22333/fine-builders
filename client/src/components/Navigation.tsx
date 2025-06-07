@@ -29,6 +29,8 @@ export default function Navigation() {
 
   useEffect(() => {
     setIsOpen(false);
+    setIsVisible(true); // Always show navigation when navigating to a new page
+    setLastScrollY(0); // Reset scroll position tracking
   }, [location]);
 
   const navItems = [
@@ -41,8 +43,8 @@ export default function Navigation() {
   return (
     <motion.nav
       className={`fixed w-full z-50 transition-all duration-700 ${
-        isScrolled 
-          ? "bg-white/5 backdrop-blur-xl border-b border-white/10 shadow-2xl shadow-black/20" 
+        isScrolled || location !== "/"
+          ? "bg-white/10 backdrop-blur-xl border-b border-white/10 shadow-2xl shadow-black/20"
           : "bg-transparent"
       }`}
       initial={{ y: -100 }}
@@ -76,11 +78,15 @@ export default function Navigation() {
                 whileHover={{ x: 2 }}
                 transition={{ type: "spring", stiffness: 400 }}
               >
-                <h1 className="text-xl lg:text-2xl font-light text-white tracking-wider">
+                <h1 className={`text-xl lg:text-2xl font-light tracking-wider ${
+                  location === "/" ? "text-white" : "text-gray-900"
+                }`}>
                   <span className="font-thin">Fine</span>
                   <span className="font-bold text-orange-400 ml-1">Builders</span>
                 </h1>
-                <div className="text-xs text-white/60 tracking-widest uppercase font-light">
+                <div className={`text-xs tracking-widest uppercase font-light ${
+                  location === "/" ? "text-white/60" : "text-gray-600"
+                }`}>
                   Interiors
                 </div>
               </motion.div>
@@ -109,7 +115,9 @@ export default function Navigation() {
                     className={`relative overflow-hidden px-6 py-3 transition-all duration-500 ${
                       location === item.path
                         ? "text-orange-400"
-                        : "text-white/80 hover:text-white"
+                        : location === "/"
+                        ? "text-white/80 hover:text-white"
+                        : "text-gray-700 hover:text-gray-900"
                     }`}
                     whileHover={{ y: -1 }}
                     transition={{ type: "spring", stiffness: 400 }}
@@ -129,7 +137,9 @@ export default function Navigation() {
                     
                     {/* Hover effect */}
                     <motion.div
-                      className="absolute inset-0 bg-white/5 rounded-lg"
+                      className={`absolute inset-0 rounded-lg ${
+                        location === "/" ? "bg-white/5" : "bg-gray-100"
+                      }`}
                       initial={{ scale: 0, opacity: 0 }}
                       whileHover={{ scale: 1, opacity: 1 }}
                       transition={{ duration: 0.2 }}
@@ -138,33 +148,7 @@ export default function Navigation() {
                 </Link>
               </motion.div>
             ))}
-            
-            {/* CTA Button */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-            >
-              <motion.a
-                href="https://wa.me/919895516163"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-medium rounded-none overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/25"
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <span className="relative z-10 flex items-center text-sm uppercase tracking-wide">
-                  <i className="fab fa-whatsapp mr-2"></i>
-                  Connect
-                </span>
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-700"
-                  initial={{ x: "-100%" }}
-                  whileHover={{ x: 0 }}
-                  transition={{ duration: 0.3 }}
-                />
-              </motion.a>
-            </motion.div>
+
           </motion.div>
 
           {/* Mobile menu button */}
@@ -176,8 +160,12 @@ export default function Navigation() {
           >
             <motion.button
               onClick={() => setIsOpen(!isOpen)}
-              className="relative w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 flex items-center justify-center"
-              whileHover={{ scale: 1.05, bg: "rgba(255,255,255,0.15)" }}
+              className={`relative w-12 h-12 backdrop-blur-sm rounded-xl border flex items-center justify-center ${
+                location === "/"
+                  ? "bg-white/10 border-white/20"
+                  : "bg-gray-100/80 border-gray-200"
+              }`}
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <motion.div
@@ -185,21 +173,27 @@ export default function Navigation() {
                 animate={isOpen ? "open" : "closed"}
               >
                 <motion.span
-                  className="w-full h-0.5 bg-white rounded-full transform transition-all duration-300"
+                  className={`w-full h-0.5 rounded-full transform transition-all duration-300 ${
+                    location === "/" ? "bg-white" : "bg-gray-700"
+                  }`}
                   variants={{
                     closed: { rotate: 0, y: 0 },
                     open: { rotate: 45, y: 2 }
                   }}
                 />
                 <motion.span
-                  className="w-full h-0.5 bg-white rounded-full transform transition-all duration-300 mt-1"
+                  className={`w-full h-0.5 rounded-full transform transition-all duration-300 mt-1 ${
+                    location === "/" ? "bg-white" : "bg-gray-700"
+                  }`}
                   variants={{
                     closed: { opacity: 1 },
                     open: { opacity: 0 }
                   }}
                 />
                 <motion.span
-                  className="w-full h-0.5 bg-white rounded-full transform transition-all duration-300 mt-1"
+                  className={`w-full h-0.5 rounded-full transform transition-all duration-300 mt-1 ${
+                    location === "/" ? "bg-white" : "bg-gray-700"
+                  }`}
                   variants={{
                     closed: { rotate: 0, y: 0 },
                     open: { rotate: -45, y: -6 }

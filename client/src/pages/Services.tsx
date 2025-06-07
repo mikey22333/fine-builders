@@ -41,13 +41,13 @@ export default function Services() {
       features: ["Photorealistic Renders", "Virtual Walkthroughs", "Design Presentations", "Concept Visualization"]
     },
     {
-      title: "Vastu & Space Planning",
-      description: "Harmonious space planning that balances functionality with traditional Vastu principles for positive energy.",
-      image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Architectural floor plan and space planning design",
-      icon: "fas fa-compass",
+      title: "Renovation & Remodeling",
+      description: "Complete transformation of existing spaces with modern design solutions and structural improvements.",
+      image: "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      alt: "Home renovation and remodeling project in progress",
+      icon: "fas fa-hammer",
       color: "from-amber-500 to-orange-600",
-      features: ["Vastu Consultation", "Space Optimization", "Layout Planning", "Energy Flow Design"]
+      features: ["Complete Makeovers", "Structural Changes", "Modern Upgrades", "Value Enhancement"]
     },
     {
       title: "Custom Solutions",
