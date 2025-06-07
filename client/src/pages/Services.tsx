@@ -52,7 +52,7 @@ export default function Services() {
     {
       title: "Custom Solutions",
       description: "Bespoke design solutions tailored to your unique requirements and lifestyle preferences.",
-      image: "/images/wardrobe.jpg",
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       alt: "Custom interior design solutions and furniture",
       icon: "fas fa-cog",
       color: "from-slate-500 to-gray-600",

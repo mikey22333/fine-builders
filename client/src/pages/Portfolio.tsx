@@ -12,7 +12,7 @@ export default function Portfolio() {
       category: "kitchens",
       title: "Modern Modular Kitchen",
       location: "Ambalappuzha, Kerala",
-      image: "/images/kitchen1.jpg",
+      image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       alt: "Contemporary modular kitchen with island and pendant lighting",
       details: "Premium granite countertops • Custom cabinetry • Smart appliances"
     },
@@ -21,7 +21,7 @@ export default function Portfolio() {
       category: "residential",
       title: "Custom Wardrobe Design",
       location: "Kerala",
-      image: "/images/kitchen2.jpg",
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       alt: "Modern wardrobe with integrated mirror and storage",
       details: "Sliding doors • LED lighting • Organized compartments"
     },
@@ -30,7 +30,7 @@ export default function Portfolio() {
       category: "residential",
       title: "Master Bedroom Interior",
       location: "Kerala",
-      image: "/images/bedroom.jpg",
+      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       alt: "Contemporary master bedroom with accent lighting",
       details: "King-size bed • Reading nooks • Ambient lighting"
     },
@@ -39,7 +39,7 @@ export default function Portfolio() {
       category: "kitchens",
       title: "Premium Kitchen Design",
       location: "Kerala",
-      image: "/images/wardrobe.jpg",
+      image: "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       alt: "Modern kitchen with bar seating and premium finishes",
       details: "Granite surfaces • Soft-close drawers • Under-cabinet lighting"
     },
@@ -48,7 +48,7 @@ export default function Portfolio() {
       category: "residential",
       title: "Living Room Mirror Feature",
       location: "Kerala",
-      image: "/images/living-room.jpg",
+      image: "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       alt: "Elegant living room with decorative mirror and plants",
       details: "Decorative mirrors • Plant integration • Modern lighting"
     },
@@ -57,7 +57,7 @@ export default function Portfolio() {
       category: "residential",
       title: "Home Office Design",
       location: "Kerala",
-      image: "/images/office.jpg",
+      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       alt: "Modern home office with ergonomic furniture",
       details: "Ergonomic furniture • Cable management • Privacy solutions"
     },
@@ -66,7 +66,7 @@ export default function Portfolio() {
       category: "residential",
       title: "Custom Storage Solutions",
       location: "Kerala",
-      image: "/images/storage.jpg",
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       alt: "Innovative wooden partition and storage design",
       details: "Wooden partitions • Hidden storage • Space optimization"
     },
@@ -75,7 +75,7 @@ export default function Portfolio() {
       category: "commercial",
       title: "Showroom Display Design",
       location: "Kerala",
-      image: "/images/showroom.jpg",
+      image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       alt: "Modern furniture showroom with contemporary displays",
       details: "Display systems • Accent lighting • Brand showcasing"
     },
@@ -84,7 +84,7 @@ export default function Portfolio() {
       category: "residential",
       title: "Ceiling Design with Mirror",
       location: "Kerala",
-      image: "/images/ceiling.jpg",
+      image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       alt: "Innovative ceiling design with geometric mirror feature",
       details: "Geometric mirrors • Ceiling features • Artistic elements"
     }
