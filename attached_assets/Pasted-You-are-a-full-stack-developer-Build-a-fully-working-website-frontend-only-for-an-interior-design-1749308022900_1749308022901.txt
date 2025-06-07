@@ -1,0 +1,72 @@
+You are a full-stack developer. Build a fully working website (frontend only) for an interior design firm in India. The site should be:
+
+- Responsive and elegant (mobile-first)
+- Coded in HTML + Tailwind CSS + JavaScript (or React + Tailwind)
+- Fully functional with multiple working pages (home, services, portfolio, contact)
+- Form elements should be functional using dummy logic (JS validation)
+- External links (Facebook, Instagram, WhatsApp) must open correctly
+- Navigation between sections/pages must work as intended
+- All images can be placeholders with alt text
+- Code must be clean, modular, and maintainable
+
+---
+
+### 🎯 Firm Details:
+
+- **Business Name**: Fine Builders & Interiors
+- **Location**: Navarakkal–Ambalappuzha Temple Road, Ambalappuzha, Kerala 688561, India
+- **Email**: finebuildersandinteriors@gmail.com
+- **Phone/WhatsApp**: +91 9895516163
+- **Instagram**: https://instagram.com/fine__solutions
+- **Facebook**: https://facebook.com/finealwaysfine
+
+---
+
+### 📁 Pages & Features
+
+1. **Home Page**
+   - Hero with firm name + call to action
+   - “Our Promise” section (brief about the brand)
+   - Scroll-to sections for Services and Portfolio
+
+2. **Services Page**
+   - Cards/grid showcasing:
+     - Residential Interiors
+     - Commercial Spaces
+     - Modular Kitchens
+     - 3D Visualizations
+     - Vastu & Space Planning
+
+3. **Portfolio Page**
+   - Responsive gallery (8–12 projects with placeholder images)
+   - Filter buttons for Residential, Commercial, Kitchens
+
+4. **Contact Page**
+   - Contact form (Name, Email, Message)
+   - Dummy validation + success alert
+   - Address with embedded Google Maps iframe
+   - Working WhatsApp & Email click buttons
+   - Social media icons with links
+
+5. **Navigation**
+   - Navbar with logo and page links
+   - Sticky on scroll
+   - Hamburger menu on mobile
+
+6. **Footer**
+   - Business name, social icons, © 2025, quick links
+
+---
+
+### 💡 Technical Notes:
+
+- Tailwind CSS for all styling (no Bootstrap)
+- Fully mobile-responsive (test with dev tools)
+- Form can log input to console or simulate success
+- No backend — all logic is frontend-only
+- Use `<a>` tags for social/WhatsApp/email links:
+   - `mailto:`, `tel:`, `https://wa.me/`
+- Code must be clean and organized (ideal for deployment or expanding later)
+
+Structure files like:
+
