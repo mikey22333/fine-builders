@@ -18,12 +18,12 @@ export default function Portfolio() {
     },
     {
       id: 2,
-      category: "kitchens",
-      title: "Premium Kitchen Design",
+      category: "residential",
+      title: "Custom Wardrobe Design",
       location: "Kerala",
       image: "/images/kitchen2.jpg",
-      alt: "Modern kitchen with bar seating and premium finishes",
-      details: "Granite surfaces • Soft-close drawers • Under-cabinet lighting"
+      alt: "Modern wardrobe with integrated mirror and storage",
+      details: "Sliding doors • LED lighting • Organized compartments"
     },
     {
       id: 3,
@@ -36,12 +36,12 @@ export default function Portfolio() {
     },
     {
       id: 4,
-      category: "residential",
-      title: "Custom Wardrobe Design",
+      category: "kitchens",
+      title: "Premium Kitchen Design",
       location: "Kerala",
       image: "/images/wardrobe.jpg",
-      alt: "Modern wardrobe with integrated mirror and storage",
-      details: "Sliding doors • LED lighting • Organized compartments"
+      alt: "Modern kitchen with bar seating and premium finishes",
+      details: "Granite surfaces • Soft-close drawers • Under-cabinet lighting"
     },
     {
       id: 5,
