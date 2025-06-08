@@ -88,7 +88,7 @@ export default function Home() {
       </section>
 
       {/* Quick Access Sections */}
-      <section className="section-padding bg-gradient-to-br from-emerald-50 via-white to-blue-50 relative overflow-hidden dot-pattern">
+      <section className="section-padding bg-gradient-to-br from-emerald-50 via-white to-blue-50 relative overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-20 left-10 w-64 h-64 bg-emerald-200/20 rounded-full blur-3xl pulse-glow"></div>

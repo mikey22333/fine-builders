@@ -103,7 +103,7 @@ export default function Portfolio() {
     : portfolioItems.filter(item => item.category === activeFilter);
 
   return (
-    <div className="pt-28 pb-20 bg-gradient-to-br from-purple-50 via-white to-pink-50 relative overflow-hidden grid-bg">
+    <div className="pt-28 pb-20 bg-gradient-to-br from-purple-50 via-white to-pink-50 relative overflow-hidden">
       <SEO
         title="Portfolio - Fine Builders & Interiors Kerala | Interior Design Projects"
         description="Explore our stunning portfolio of interior design projects in Kerala. View completed residential, commercial, and modular kitchen designs by Fine Builders & Interiors in Ambalappuzha."

@@ -62,7 +62,7 @@ export default function Services() {
   ];
 
   return (
-    <div className="pt-28 pb-20 bg-gradient-to-br from-blue-50 via-white to-orange-50 relative overflow-hidden dot-pattern">
+    <div className="pt-28 pb-20 bg-gradient-to-br from-blue-50 via-white to-orange-50 relative overflow-hidden">
       <SEO
         title="Interior Design Services - Fine Builders & Interiors Kerala"
         description="Comprehensive interior design services in Kerala including residential interiors, commercial spaces, modular kitchens, 3D visualizations, renovation & custom solutions. Expert designers in Ambalappuzha."
