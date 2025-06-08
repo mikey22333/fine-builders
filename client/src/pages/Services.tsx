@@ -25,7 +25,7 @@ export default function Services() {
     {
       title: "Modular Kitchens",
       description: "Functional and stylish kitchen solutions that maximize space and enhance your culinary experience.",
-      image: "/images/kitchen1.jpg",
+      image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       alt: "Contemporary modular kitchen design",
       icon: "fas fa-utensils",
       color: "from-orange-500 to-red-600",
