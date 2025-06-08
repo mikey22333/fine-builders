@@ -39,7 +39,7 @@ export default function Portfolio() {
       category: "kitchens",
       title: "Premium Kitchen Design",
       location: "Kerala",
-      image: "/images/project4.jpg",
+      image: "/images/project7.jpg",
       alt: "Modern kitchen with bar seating and premium finishes",
       details: "Granite surfaces • Soft-close drawers • Under-cabinet lighting"
     },
@@ -48,7 +48,7 @@ export default function Portfolio() {
       category: "residential",
       title: "Living Room Mirror Feature",
       location: "Kerala",
-      image: "/images/project3.jpg",
+      image: "/images/project8.jpg",
       alt: "Elegant living room with decorative mirror and plants",
       details: "Decorative mirrors • Plant integration • Modern lighting"
     },
@@ -66,18 +66,18 @@ export default function Portfolio() {
       category: "residential",
       title: "Custom Storage Solutions",
       location: "Kerala",
-      image: "/images/project7.jpg",
+      image: "/images/project4.jpg",
       alt: "Innovative wooden partition and storage design",
       details: "Wooden partitions • Hidden storage • Space optimization"
     },
     {
       id: 8,
       category: "residential",
-      title: "Modern Living Space",
+      title: "Home Office Setup",
       location: "Kerala",
-      image: "/images/project8.jpg",
-      alt: "Contemporary living space with modern furniture",
-      details: "Modern furniture • Ambient lighting • Space planning"
+      image: "/images/project3.jpg",
+      alt: "Modern home office with ergonomic workspace",
+      details: "Ergonomic design • Workspace optimization • Modern furniture"
     },
     {
       id: 9,
