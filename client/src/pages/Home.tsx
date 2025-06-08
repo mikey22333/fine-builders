@@ -173,7 +173,7 @@ export default function Home() {
                 >
                   <div className="relative overflow-hidden">
                     <img
-                      src="/images/kitchen1.jpg"
+                      src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
                       alt="Modern modular kitchen with island and premium finishes"
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
                     />
