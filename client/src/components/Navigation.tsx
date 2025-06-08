@@ -100,7 +100,7 @@ export default function Navigation() {
     <motion.nav
       className={`fixed w-full z-50 transition-all duration-700 ${
         isScrolled || location !== "/"
-          ? "bg-white/10 backdrop-blur-xl border-b border-white/10 shadow-2xl shadow-black/20"
+          ? "bg-white/95 backdrop-blur-xl border-b border-gray-200/50 shadow-lg shadow-black/10"
           : "bg-transparent"
       }`}
       initial={{ y: -100 }}
@@ -217,9 +217,9 @@ export default function Navigation() {
             <motion.button
               onClick={() => setIsOpen(!isOpen)}
               className={`relative w-14 h-14 backdrop-blur-sm rounded-xl border flex items-center justify-center touch-manipulation ${
-                location === "/"
+                location === "/" && !isScrolled
                   ? "bg-white/10 border-white/20"
-                  : "bg-gray-100/80 border-gray-200"
+                  : "bg-white/90 border-gray-200 shadow-lg"
               }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -232,7 +232,7 @@ export default function Navigation() {
               >
                 <motion.span
                   className={`w-full h-0.5 rounded-full transform transition-all duration-300 ${
-                    location === "/" ? "bg-white" : "bg-gray-700"
+                    location === "/" && !isScrolled ? "bg-white" : "bg-gray-700"
                   }`}
                   variants={{
                     closed: { rotate: 0, y: 0 },
@@ -241,7 +241,7 @@ export default function Navigation() {
                 />
                 <motion.span
                   className={`w-full h-0.5 rounded-full transform transition-all duration-300 mt-1 ${
-                    location === "/" ? "bg-white" : "bg-gray-700"
+                    location === "/" && !isScrolled ? "bg-white" : "bg-gray-700"
                   }`}
                   variants={{
                     closed: { opacity: 1 },
@@ -250,7 +250,7 @@ export default function Navigation() {
                 />
                 <motion.span
                   className={`w-full h-0.5 rounded-full transform transition-all duration-300 mt-1 ${
-                    location === "/" ? "bg-white" : "bg-gray-700"
+                    location === "/" && !isScrolled ? "bg-white" : "bg-gray-700"
                   }`}
                   variants={{
                     closed: { rotate: 0, y: 0 },
