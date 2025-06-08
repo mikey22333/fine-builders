@@ -7,6 +7,7 @@ export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   // Initial mobile check on component mount
   useEffect(() => {
@@ -72,22 +73,34 @@ export default function Navigation() {
   // Handle body scroll lock when menu is open
   useEffect(() => {
     if (isOpen) {
+      // Save current scroll position
+      const currentScrollY = window.scrollY;
+      setScrollPosition(currentScrollY);
+
+      // Lock body scroll and maintain position
       document.body.style.overflow = 'hidden';
       document.body.style.position = 'fixed';
+      document.body.style.top = `-${currentScrollY}px`;
       document.body.style.width = '100%';
     } else {
+      // Restore scroll position
       document.body.style.overflow = '';
       document.body.style.position = '';
+      document.body.style.top = '';
       document.body.style.width = '';
+
+      // Restore scroll position without triggering scroll events
+      window.scrollTo(0, scrollPosition);
     }
 
     // Cleanup on unmount
     return () => {
       document.body.style.overflow = '';
       document.body.style.position = '';
+      document.body.style.top = '';
       document.body.style.width = '';
     };
-  }, [isOpen]);
+  }, [isOpen, scrollPosition]);
 
   const navItems = [
     { path: "/", label: "Home", icon: "fas fa-home" },
