@@ -142,13 +142,22 @@ export default function Contact() {
                     <div className="w-12 h-12 bg-gradient-to-r from-red-500 to-red-600 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
                       <i className="fas fa-map-marker-alt text-white"></i>
                     </div>
-                    <div>
+                    <div className="flex-1">
                       <h3 className="font-bold text-gray-900 mb-2">Our Office</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed">
+                      <p className="text-gray-600 text-sm leading-relaxed mb-3">
                         Navarakkal–Ambalappuzha Temple Road<br />
                         Ambalappuzha, Kerala 688561<br />
                         India
                       </p>
+                      <a
+                        href="https://maps.app.goo.gl/tTRaZUCUbyLuvMoZA"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-red-600 hover:text-red-700 text-sm font-medium transition-colors duration-200"
+                      >
+                        <i className="fas fa-external-link-alt mr-1"></i>
+                        View on Google Maps
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -258,9 +267,18 @@ export default function Contact() {
                   Visit Our Office
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">Find Us</h2>
-                <p className="text-gray-600 max-w-2xl mx-auto">
+                <p className="text-gray-600 max-w-2xl mx-auto mb-4">
                   Located in the heart of Ambalappuzha, Kerala. Schedule a visit to our office for a personal consultation and see our design portfolio in person.
                 </p>
+                <a
+                  href="https://maps.app.goo.gl/tTRaZUCUbyLuvMoZA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-red-500 text-white rounded-xl hover:bg-red-600 transition-colors duration-200 font-medium"
+                >
+                  <i className="fas fa-directions mr-2"></i>
+                  Get Directions
+                </a>
               </div>
               <div className="h-96 relative">
                 <iframe
