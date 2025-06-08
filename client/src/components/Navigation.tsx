@@ -32,12 +32,15 @@ export default function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY, isOpen]);
 
+  // Handle location changes
   useEffect(() => {
     setIsOpen(false);
     setIsVisible(true); // Always show navigation when navigating to a new page
     setLastScrollY(0); // Reset scroll position tracking
+  }, [location]);
 
-    // Prevent body scroll when mobile menu is open
+  // Handle body scroll lock when menu is open
+  useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
       document.body.style.position = 'fixed';
@@ -54,7 +57,7 @@ export default function Navigation() {
       document.body.style.position = '';
       document.body.style.width = '';
     };
-  }, [location, isOpen]);
+  }, [isOpen]);
 
   const navItems = [
     { path: "/", label: "Home", icon: "fas fa-home" },
