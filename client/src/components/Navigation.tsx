@@ -13,25 +13,48 @@ export default function Navigation() {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       setIsScrolled(currentScrollY > 50);
-      
-      // Hide navbar on scroll down, show on scroll up
-      if (currentScrollY > lastScrollY && currentScrollY > 150) {
-        setIsVisible(false);
+
+      // Only hide navbar on desktop, keep it visible on mobile for better UX
+      const isMobile = window.innerWidth < 1024; // lg breakpoint
+      if (!isMobile && !isOpen) {
+        if (currentScrollY > lastScrollY && currentScrollY > 150) {
+          setIsVisible(false);
+        } else {
+          setIsVisible(true);
+        }
       } else {
-        setIsVisible(true);
+        setIsVisible(true); // Always visible on mobile
       }
       setLastScrollY(currentScrollY);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+  }, [lastScrollY, isOpen]);
 
   useEffect(() => {
     setIsOpen(false);
     setIsVisible(true); // Always show navigation when navigating to a new page
     setLastScrollY(0); // Reset scroll position tracking
-  }, [location]);
+
+    // Prevent body scroll when mobile menu is open
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.width = '100%';
+    } else {
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+    }
+
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+    };
+  }, [location, isOpen]);
 
   const navItems = [
     { path: "/", label: "Home", icon: "fas fa-home" },
@@ -160,13 +183,15 @@ export default function Navigation() {
           >
             <motion.button
               onClick={() => setIsOpen(!isOpen)}
-              className={`relative w-12 h-12 backdrop-blur-sm rounded-xl border flex items-center justify-center ${
+              className={`relative w-14 h-14 backdrop-blur-sm rounded-xl border flex items-center justify-center touch-manipulation ${
                 location === "/"
                   ? "bg-white/10 border-white/20"
                   : "bg-gray-100/80 border-gray-200"
               }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              aria-label={isOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isOpen}
             >
               <motion.div
                 className="w-6 h-6 flex flex-col justify-center items-center"
@@ -209,7 +234,7 @@ export default function Navigation() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="lg:hidden fixed inset-0 z-40"
+            className="lg:hidden mobile-menu-container z-[60] overflow-hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -224,9 +249,21 @@ export default function Navigation() {
               onClick={() => setIsOpen(false)}
             />
             
+            {/* Close button */}
+            <motion.button
+              onClick={() => setIsOpen(false)}
+              className="absolute top-6 right-6 w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-colors duration-200 z-10 touch-manipulation"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.2 }}
+              aria-label="Close menu"
+            >
+              <i className="fas fa-times text-xl"></i>
+            </motion.button>
+
             {/* Menu Content */}
             <motion.div
-              className="relative h-full flex flex-col justify-center items-center space-y-8"
+              className="relative h-full flex flex-col justify-center items-center space-y-8 px-6 py-20 overflow-y-auto mobile-scroll"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
@@ -241,10 +278,10 @@ export default function Navigation() {
                 >
                   <Link
                     href={item.path}
-                    className={`flex items-center space-x-4 text-3xl font-light tracking-wider transition-all duration-300 ${
+                    className={`flex items-center space-x-4 text-2xl md:text-3xl font-light tracking-wider transition-all duration-300 py-4 px-6 rounded-xl touch-manipulation ${
                       location === item.path
-                        ? "text-orange-400"
-                        : "text-white hover:text-orange-300"
+                        ? "text-orange-400 bg-orange-400/10"
+                        : "text-white hover:text-orange-300 hover:bg-white/5"
                     }`}
                     onClick={() => setIsOpen(false)}
                   >
@@ -264,7 +301,7 @@ export default function Navigation() {
                   href="https://wa.me/919895516163"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-3 bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-4 rounded-none text-lg font-medium hover:shadow-2xl transition-all duration-300"
+                  className="flex items-center space-x-3 bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-5 rounded-xl text-lg font-medium hover:shadow-2xl transition-all duration-300 touch-manipulation min-h-[56px]"
                   onClick={() => setIsOpen(false)}
                 >
                   <i className="fab fa-whatsapp text-xl"></i>
