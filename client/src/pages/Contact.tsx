@@ -1,10 +1,17 @@
 import { motion } from "framer-motion";
+import SEO from "@/components/SEO";
 import ScrollReveal, { StaggerContainer, StaggerItem } from "@/components/ScrollReveal";
 import ContactForm from "@/components/ContactForm";
 
 export default function Contact() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-orange-50 relative overflow-hidden">
+      <SEO
+        title="Contact Us - Fine Builders & Interiors Kerala | Get Free Consultation"
+        description="Contact Fine Builders & Interiors for your interior design needs in Kerala. Get free consultation, quotes, and expert advice. Located in Ambalappuzha. Call +91-9895516163."
+        keywords="contact interior designer Kerala, interior design consultation, Fine Builders contact, Ambalappuzha interior designers, interior design quotes Kerala, free consultation interior design"
+        url="https://fine-builders.netlify.app/contact"
+      />
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-orange-200/20 rounded-full blur-3xl"></div>

@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
+import SEO from "@/components/SEO";
 import ScrollReveal, { StaggerContainer, StaggerItem } from "@/components/ScrollReveal";
 
 export default function Services() {
@@ -62,6 +63,12 @@ export default function Services() {
 
   return (
     <div className="pt-28 pb-20 bg-gradient-to-br from-white via-gray-50/30 to-white relative overflow-hidden">
+      <SEO
+        title="Interior Design Services - Fine Builders & Interiors Kerala"
+        description="Comprehensive interior design services in Kerala including residential interiors, commercial spaces, modular kitchens, 3D visualizations, renovation & custom solutions. Expert designers in Ambalappuzha."
+        keywords="interior design services Kerala, residential interior design, commercial interior design, modular kitchen design, 3D visualization services, renovation services, custom interior solutions, Ambalappuzha interior designers"
+        url="https://fine-builders.netlify.app/services"
+      />
       <div className="absolute inset-0 floating-elements pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">

@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import Hero from "@/components/Hero";
+import SEO from "@/components/SEO";
 import ScrollReveal, { StaggerContainer, StaggerItem } from "@/components/ScrollReveal";
 
 export default function Home() {
@@ -30,6 +31,12 @@ export default function Home() {
 
   return (
     <div className="overflow-hidden">
+      <SEO
+        title="Fine Builders & Interiors - Premium Interior Design Services in Kerala"
+        description="Transform your space with Fine Builders & Interiors, Kerala's leading interior design company. Specializing in residential & commercial interiors, modular kitchens, 3D visualizations, and custom solutions in Ambalappuzha."
+        keywords="interior design Kerala, interior designers Ambalappuzha, modular kitchen Kerala, home interior design, commercial interior design, 3D visualization, interior decoration Kerala, Fine Builders Interiors"
+        url="https://fine-builders.netlify.app/"
+      />
       {/* Hero Section */}
       <Hero />
 

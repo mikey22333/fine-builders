@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
+import SEO from "@/components/SEO";
 import ScrollReveal, { StaggerContainer, StaggerItem } from "@/components/ScrollReveal";
 
 export default function Portfolio() {
@@ -103,6 +104,12 @@ export default function Portfolio() {
 
   return (
     <div className="pt-28 pb-20 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
+      <SEO
+        title="Portfolio - Fine Builders & Interiors Kerala | Interior Design Projects"
+        description="Explore our stunning portfolio of interior design projects in Kerala. View completed residential, commercial, and modular kitchen designs by Fine Builders & Interiors in Ambalappuzha."
+        keywords="interior design portfolio Kerala, completed interior projects, residential interior designs, commercial interior projects, modular kitchen gallery, Fine Builders portfolio, Ambalappuzha interior designs"
+        url="https://fine-builders.netlify.app/portfolio"
+      />
       <div className="absolute inset-0 floating-elements pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
