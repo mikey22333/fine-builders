@@ -12,12 +12,7 @@ export default function Contact() {
         keywords="contact interior designer Kerala, interior design consultation, Fine Builders contact, Ambalappuzha interior designers, interior design quotes Kerala, free consultation interior design"
         url="https://fine-builders.netlify.app/contact"
       />
-      {/* Background Elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-orange-200/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-orange-100/10 to-blue-100/10 rounded-full blur-3xl"></div>
-      </div>
+
 
       {/* Hero Section */}
       <div className="relative pt-32 pb-16">

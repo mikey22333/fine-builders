@@ -69,12 +69,7 @@ export default function Services() {
         keywords="interior design services Kerala, residential interior design, commercial interior design, modular kitchen design, 3D visualization services, renovation services, custom interior solutions, Ambalappuzha interior designers"
         url="https://fine-builders.netlify.app/services"
       />
-      {/* Background Elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-200/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-orange-200/20 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-blue-100/10 to-orange-100/10 rounded-full blur-3xl"></div>
-      </div>
+
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Header */}

@@ -89,12 +89,7 @@ export default function Home() {
 
       {/* Quick Access Sections */}
       <section className="section-padding bg-gradient-to-br from-emerald-50 via-white to-blue-50 relative overflow-hidden">
-        {/* Background Elements */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 left-10 w-64 h-64 bg-emerald-200/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-80 h-80 bg-blue-200/20 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gradient-to-r from-emerald-100/10 to-blue-100/10 rounded-full blur-3xl"></div>
-        </div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Services Preview */}

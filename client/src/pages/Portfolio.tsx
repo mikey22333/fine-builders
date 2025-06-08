@@ -110,12 +110,7 @@ export default function Portfolio() {
         keywords="interior design portfolio Kerala, completed interior projects, residential interior designs, commercial interior projects, modular kitchen gallery, Fine Builders portfolio, Ambalappuzha interior designs"
         url="https://fine-builders.netlify.app/portfolio"
       />
-      {/* Background Elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 right-10 w-80 h-80 bg-purple-200/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-10 w-96 h-96 bg-pink-200/20 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/3 left-1/3 w-[500px] h-[500px] bg-gradient-to-r from-purple-100/10 to-pink-100/10 rounded-full blur-3xl"></div>
-      </div>
+
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Header */}
