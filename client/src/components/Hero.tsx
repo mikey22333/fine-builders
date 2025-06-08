@@ -157,7 +157,7 @@ export default function Hero() {
             className="text-base sm:text-lg md:text-xl text-white/80 max-w-3xl mx-auto font-light leading-relaxed drop-shadow-sm"
             variants={slideUpVariants}
           >
-            Award-winning interior design studio in Kerala, crafting bespoke spaces that reflect your unique vision and lifestyle through innovative design excellence.
+            Transforming dreams into reality with exceptional craftsmanship, where every space tells your unique story through thoughtful design and uncompromising quality.
           </motion.p>
         </motion.div>
 
