@@ -7,6 +7,14 @@ export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+
+  // Initial mobile check on component mount
+  useEffect(() => {
+    const isMobile = window.innerWidth < 1024;
+    if (isMobile) {
+      setIsVisible(true);
+    }
+  }, []);
   const [location] = useLocation();
 
   useEffect(() => {
@@ -14,29 +22,51 @@ export default function Navigation() {
       const currentScrollY = window.scrollY;
       setIsScrolled(currentScrollY > 50);
 
-      // Only hide navbar on desktop, keep it visible on mobile for better UX
+      // Check if device is mobile
       const isMobile = window.innerWidth < 1024; // lg breakpoint
-      if (!isMobile && !isOpen) {
+
+      // Always keep navbar visible on mobile, only hide on desktop when scrolling down
+      if (isMobile || isOpen) {
+        setIsVisible(true); // Always visible on mobile or when menu is open
+      } else {
+        // Desktop auto-hide behavior
         if (currentScrollY > lastScrollY && currentScrollY > 150) {
           setIsVisible(false);
         } else {
           setIsVisible(true);
         }
-      } else {
-        setIsVisible(true); // Always visible on mobile
       }
       setLastScrollY(currentScrollY);
     };
 
+    // Also handle resize to update mobile detection
+    const handleResize = () => {
+      const isMobile = window.innerWidth < 1024;
+      if (isMobile) {
+        setIsVisible(true); // Ensure navbar is visible when switching to mobile
+      }
+    };
+
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
   }, [lastScrollY, isOpen]);
 
-  // Handle location changes
+  // Handle location changes and initial mobile check
   useEffect(() => {
     setIsOpen(false);
     setIsVisible(true); // Always show navigation when navigating to a new page
     setLastScrollY(0); // Reset scroll position tracking
+
+    // Ensure navbar is visible on mobile devices
+    const isMobile = window.innerWidth < 1024;
+    if (isMobile) {
+      setIsVisible(true);
+    }
   }, [location]);
 
   // Handle body scroll lock when menu is open
