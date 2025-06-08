@@ -81,12 +81,12 @@ export default function Portfolio() {
     },
     {
       id: 9,
-      category: "residential",
-      title: "Interior Design Details",
+      category: "commercial",
+      title: "Commercial Office Design",
       location: "Kerala",
       image: "/images/project9.jpg",
-      alt: "Detailed interior design elements and finishes",
-      details: "Custom finishes • Design details • Quality craftsmanship"
+      alt: "Modern commercial office space with professional furniture",
+      details: "Professional workspace • Modern furniture • Ergonomic design"
     }
   ];
 
