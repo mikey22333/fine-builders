@@ -30,7 +30,7 @@ export default function Portfolio() {
       category: "residential",
       title: "Master Bedroom Interior",
       location: "Kerala",
-      image: "/images/project3.jpg",
+      image: "/images/project5.jpg",
       alt: "Contemporary master bedroom with accent lighting",
       details: "King-size bed • Reading nooks • Ambient lighting"
     },
@@ -48,7 +48,7 @@ export default function Portfolio() {
       category: "residential",
       title: "Living Room Mirror Feature",
       location: "Kerala",
-      image: "/images/project5.jpg",
+      image: "/images/project3.jpg",
       alt: "Elegant living room with decorative mirror and plants",
       details: "Decorative mirrors • Plant integration • Modern lighting"
     },
@@ -72,21 +72,21 @@ export default function Portfolio() {
     },
     {
       id: 8,
-      category: "commercial",
-      title: "Showroom Display Design",
+      category: "residential",
+      title: "Modern Living Space",
       location: "Kerala",
       image: "/images/project8.jpg",
-      alt: "Modern furniture showroom with contemporary displays",
-      details: "Display systems • Accent lighting • Brand showcasing"
+      alt: "Contemporary living space with modern furniture",
+      details: "Modern furniture • Ambient lighting • Space planning"
     },
     {
       id: 9,
       category: "residential",
-      title: "Ceiling Design with Mirror",
+      title: "Interior Design Details",
       location: "Kerala",
       image: "/images/project9.jpg",
-      alt: "Innovative ceiling design with geometric mirror feature",
-      details: "Geometric mirrors • Ceiling features • Artistic elements"
+      alt: "Detailed interior design elements and finishes",
+      details: "Custom finishes • Design details • Quality craftsmanship"
     }
   ];
 
