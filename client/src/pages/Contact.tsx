@@ -12,28 +12,11 @@ export default function Contact() {
         keywords="contact interior designer Kerala, interior design consultation, Fine Builders contact, Ambalappuzha interior designers, interior design quotes Kerala, free consultation interior design"
         url="https://fine-builders.netlify.app/contact"
       />
-      {/* Enhanced Background Elements */}
+      {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-orange-200/20 rounded-full blur-3xl pulse-glow"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl pulse-glow"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-orange-200/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-orange-100/10 to-blue-100/10 rounded-full blur-3xl"></div>
-        {/* Additional decorative elements */}
-        <div className="absolute top-40 right-20 w-6 h-6 bg-orange-300/30 transform rotate-45 floating-pattern"></div>
-        <div className="absolute bottom-40 left-20 w-8 h-8 border-2 border-blue-300/30 rounded-full floating-pattern"></div>
-        <div className="absolute top-1/3 right-1/3 w-4 h-4 bg-orange-400/40 rounded-full floating-pattern"></div>
-        <div className="absolute bottom-1/3 left-1/4 w-5 h-5 bg-blue-400/40 transform rotate-12 floating-pattern"></div>
-        <div className="absolute top-3/4 right-1/5 w-3 h-3 bg-orange-300/30 rounded-full floating-pattern"></div>
-        <div className="absolute bottom-1/5 left-1/2 w-4 h-4 bg-blue-300/30 transform rotate-45 floating-pattern"></div>
-        {/* Contact-themed icons as background */}
-        <div className="absolute top-1/4 left-1/6 text-orange-200/20 text-4xl floating-pattern">
-          <i className="fas fa-phone"></i>
-        </div>
-        <div className="absolute bottom-1/4 right-1/6 text-blue-200/20 text-4xl floating-pattern">
-          <i className="fas fa-envelope"></i>
-        </div>
-        <div className="absolute top-2/3 left-1/3 text-orange-200/20 text-3xl floating-pattern">
-          <i className="fas fa-map-marker-alt"></i>
-        </div>
       </div>
 
       {/* Hero Section */}
