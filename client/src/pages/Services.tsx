@@ -62,14 +62,24 @@ export default function Services() {
   ];
 
   return (
-    <div className="pt-28 pb-20 bg-gradient-to-br from-white via-gray-50/30 to-white relative overflow-hidden">
+    <div className="pt-28 pb-20 bg-gradient-to-br from-blue-50 via-white to-orange-50 relative overflow-hidden dot-pattern">
       <SEO
         title="Interior Design Services - Fine Builders & Interiors Kerala"
         description="Comprehensive interior design services in Kerala including residential interiors, commercial spaces, modular kitchens, 3D visualizations, renovation & custom solutions. Expert designers in Ambalappuzha."
         keywords="interior design services Kerala, residential interior design, commercial interior design, modular kitchen design, 3D visualization services, renovation services, custom interior solutions, Ambalappuzha interior designers"
         url="https://fine-builders.netlify.app/services"
       />
-      <div className="absolute inset-0 floating-elements pointer-events-none" />
+      {/* Enhanced Background Elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-200/20 rounded-full blur-3xl pulse-glow"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-orange-200/20 rounded-full blur-3xl pulse-glow"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-blue-100/10 to-orange-100/10 rounded-full blur-3xl"></div>
+        {/* Geometric patterns */}
+        <div className="absolute top-32 right-20 w-4 h-4 bg-orange-300/30 rotate-45 floating-pattern"></div>
+        <div className="absolute bottom-40 left-20 w-6 h-6 bg-blue-300/30 rotate-12 floating-pattern"></div>
+        <div className="absolute top-1/3 right-1/4 w-3 h-3 bg-orange-400/40 rounded-full floating-pattern"></div>
+        <div className="absolute bottom-1/3 left-1/4 w-5 h-5 bg-blue-400/40 rounded-full floating-pattern"></div>
+      </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Header */}

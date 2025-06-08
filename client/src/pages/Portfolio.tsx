@@ -103,14 +103,29 @@ export default function Portfolio() {
     : portfolioItems.filter(item => item.category === activeFilter);
 
   return (
-    <div className="pt-28 pb-20 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
+    <div className="pt-28 pb-20 bg-gradient-to-br from-purple-50 via-white to-pink-50 relative overflow-hidden grid-bg">
       <SEO
         title="Portfolio - Fine Builders & Interiors Kerala | Interior Design Projects"
         description="Explore our stunning portfolio of interior design projects in Kerala. View completed residential, commercial, and modular kitchen designs by Fine Builders & Interiors in Ambalappuzha."
         keywords="interior design portfolio Kerala, completed interior projects, residential interior designs, commercial interior projects, modular kitchen gallery, Fine Builders portfolio, Ambalappuzha interior designs"
         url="https://fine-builders.netlify.app/portfolio"
       />
-      <div className="absolute inset-0 floating-elements pointer-events-none" />
+      {/* Enhanced Background Elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-20 right-10 w-80 h-80 bg-purple-200/20 rounded-full blur-3xl pulse-glow"></div>
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-pink-200/20 rounded-full blur-3xl pulse-glow"></div>
+        <div className="absolute top-1/3 left-1/3 w-[500px] h-[500px] bg-gradient-to-r from-purple-100/10 to-pink-100/10 rounded-full blur-3xl"></div>
+        {/* Creative geometric patterns */}
+        <div className="absolute top-40 left-16 w-8 h-8 border-2 border-purple-300/30 rotate-45 floating-pattern"></div>
+        <div className="absolute bottom-32 right-16 w-6 h-6 border-2 border-pink-300/30 rounded-full floating-pattern"></div>
+        <div className="absolute top-2/3 right-1/3 w-4 h-4 bg-purple-400/40 transform rotate-12 floating-pattern"></div>
+        <div className="absolute bottom-1/2 left-1/5 w-5 h-5 bg-pink-400/40 rounded-full floating-pattern"></div>
+        {/* Grid pattern */}
+        <div className="absolute top-1/4 right-1/4 w-2 h-2 bg-purple-300/20 rounded-full floating-pattern"></div>
+        <div className="absolute top-1/4 right-1/4 translate-x-8 w-2 h-2 bg-purple-300/20 rounded-full floating-pattern"></div>
+        <div className="absolute top-1/4 right-1/4 translate-y-8 w-2 h-2 bg-purple-300/20 rounded-full floating-pattern"></div>
+        <div className="absolute top-1/4 right-1/4 translate-x-8 translate-y-8 w-2 h-2 bg-purple-300/20 rounded-full floating-pattern"></div>
+      </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Header */}

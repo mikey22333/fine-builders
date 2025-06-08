@@ -88,7 +88,18 @@ export default function Home() {
       </section>
 
       {/* Quick Access Sections */}
-      <section className="section-padding bg-gradient-to-br from-gray-50 via-white to-gray-50 relative">
+      <section className="section-padding bg-gradient-to-br from-emerald-50 via-white to-blue-50 relative overflow-hidden dot-pattern">
+        {/* Background Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-20 left-10 w-64 h-64 bg-emerald-200/20 rounded-full blur-3xl pulse-glow"></div>
+          <div className="absolute bottom-20 right-10 w-80 h-80 bg-blue-200/20 rounded-full blur-3xl pulse-glow"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gradient-to-r from-emerald-100/10 to-blue-100/10 rounded-full blur-3xl"></div>
+          {/* Subtle patterns */}
+          <div className="absolute top-32 right-32 w-3 h-3 bg-emerald-300/30 rotate-45 floating-pattern"></div>
+          <div className="absolute bottom-40 left-32 w-4 h-4 bg-blue-300/30 rounded-full floating-pattern"></div>
+          <div className="absolute top-2/3 right-1/5 w-2 h-2 bg-emerald-400/40 rounded-full floating-pattern"></div>
+          <div className="absolute bottom-1/4 left-1/3 w-3 h-3 bg-blue-400/40 transform rotate-12 floating-pattern"></div>
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Services Preview */}
